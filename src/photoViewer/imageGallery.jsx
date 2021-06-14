@@ -1,8 +1,9 @@
 import ImageUrls from './imageSelector';
 
-function Gallery({setCount}) {
-
-    const galleryImgs = ImageUrls.map((url, i) => <img className="thumbnail" src={url} onClick={() => setCount(i)} />);
+function ImageGallery({ setURL }) {
+    const galleryImgs = ImageUrls.map((url, i) =>
+        <img role="thumbnail" key={i} data-testid={i} className="thumbnail" src={url} onClick={() => setURL(url)} />
+    );
 
     return (
         <div>
@@ -11,4 +12,4 @@ function Gallery({setCount}) {
     );
 }
 
-export { Gallery };
+export { ImageGallery };

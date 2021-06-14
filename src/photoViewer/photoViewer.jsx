@@ -6,7 +6,7 @@ function PhotoViewer({src}) {
     
     return (
         <div className="main">
-            <img className="main-img" src={src} />
+            <img id="main-img" data-testid="main-img" className="main-img" src={src} />
         </div>
     );
 }
