@@ -1,0 +1,15 @@
+.main {
+    border: 1px dotted black;
+}
+
+.main-img {
+    height: 100%;
+    width: auto;
+}
+
+.thumbnail {
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+}
+
