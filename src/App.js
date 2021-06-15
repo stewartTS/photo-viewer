@@ -18,19 +18,19 @@ function App() {
 	const {id} = useParams()
 
 	return (
-		<Router>
-			<Switch>
-				<Route path="/images/:id" >
-					<Function />
-				</Route>
-			</Switch>
+		// <Router>
+		// 	<Switch>
+		// 		{/* <Route path="/images/:id" >
+		// 			<Function />
+		// 		</Route> */}
+		// 	</Switch>
 			<div className="App">
 				<h1>React Photo Viewer</h1>
 				<PhotoViewer src={url} />
 				<h2>-- Gallery --</h2>
 				<ImageGallery setURL={setURL} />
 			</div>
-		</Router>
+		// </Router>
 	);
 }
 
